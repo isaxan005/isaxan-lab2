@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    display: flex;
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .esas {
+    width: 30%;
+    background-color: #1f3650;
+    color: white;
+    padding: 20px;
+  }
+  
+  .esas h2, .esas h3 {
+    margin-top: 0;
+  }
+  
+  .esas hr {
+    border: 1px solid #616969;
+  }
+  
+  .esas ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .esas ul li {
+    margin-bottom: 5px;
+  }
+  
+  img  {
+    width: 200px;
+    height: 200px;
+  }
+  button {
+    margin-top: 5px;
+    padding: 6px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }

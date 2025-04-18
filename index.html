@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>İsaxan lab1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="esas">
+      <h2>İsaxan Sərdarlı</h2>
+      <hr>
+      <h3>Contact</h3>
+      <p>Tel: +994 XX XXX XX XX</p>
+      <p>Email:isaxansardarli99@gmail.com</p>
+      <hr>
+      <h3>TƏHSİL</h3>
+      <p><strong>Azərbaycan Texniki universiteti</strong></p>
+      <hr>
+      <h3>Məlumat</h3>
+      <ul>
+        <li>İxtisas:İnformasiya təhlükəsizliyi</li>
+        <li>Qrup:6424a2</li>
+        <li>Qəbul balı:503.5</li>
+      </ul>
+    </div>
+    <div class="img">
+     <img src="https://static.vecteezy.com/system/resources/thumbnails/009/292/244/small_2x/default-avatar-icon-of-social-media-user-vector.jpg" alt="">
+    </div>
+    <div class="melumat"> 
+        <h2>İsaxan Sərdarlı</h2>
+        <p>Salam! Mən 2007-ci il 29 yanvar tarixində anadan olmuşam. 2024-ci ildən Azərbaycan Texniki Universitetinin İnformasiya təhlükəsizliyi ixtisasında təhsil alıram.
+    </div>
+     
+  </div>
+</body>
+<div class="esas">
+  <h3>Təhsil</h3>
+  <ul id="tehsil-list">
+    <li>Azərbaycan Texniki Universiteti</li>
+  </ul>
+  <button onclick="addField('tehsil')">Əlavə Et</button>
+
+  <h3>İş</h3>
+  <ul id="is-list">
+    <li>İş təcrübəsi yoxdur</li>
+  </ul>
+  <button onclick="addField('is')"> Əlavə Et</button>
+
+  <h3>Bacarıqlar</h3>
+  <ul id="bacariq-list">
+    <li>HTML, CSS</li>
+  </ul>
+  <button onclick="addField('bacariq')"> Əlavə Et</button>
+</div>
+<script>
+  function addField(type) {
+    const listId = type + '-list';
+    const list = document.getElementById(listId);
+    const newItem = prompt('Yeni ' + type + ' daxil edin:');
+    if (newItem) {
+      const li = document.createElement('li');
+      li.textContent = newItem;
+      list.appendChild(li);
+    }
+  }
+</script>
+</html>
